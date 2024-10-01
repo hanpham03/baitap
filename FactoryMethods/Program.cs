@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FactoryMethods;
+using System;
 
 namespace DoFactory.GangOfFour.Factory.Structural
 {
@@ -25,43 +26,5 @@ namespace DoFactory.GangOfFour.Factory.Structural
         }
     }
 
-    // Lớp Product (Vehicle - Phương tiện)
-    abstract class Vehicle
-    {
-    }
-
-    // ConcreteProduct: Car
-    class Car : Vehicle
-    {
-    }
-
-    // ConcreteProduct: Bike
-    class Bike : Vehicle
-    {
-    }
-
-    // Creator abstract class (nhà sản xuất phương tiện)
-    abstract class Creator
-    {
-        public abstract Vehicle FactoryMethod();
-    }
-
-    // ConcreteCreator: CarCreator (Nhà sản xuất xe hơi)
-    class CarCreator : Creator
-    {
-        public override Vehicle FactoryMethod()
-        {
-            return new Car();
-        }
-    }
-
-    // ConcreteCreator: BikeCreator (Nhà sản xuất xe đạp)
-    class BikeCreator : Creator
-    {
-        public override Vehicle FactoryMethod()
-        {
-            return new Bike();
-        }
-    }
 }
 

@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Abstract\Abstract.csproj" />
+    <ProjectReference Include="..\FactoryMethods\FactoryMethods.csproj" />
+    <ProjectReference Include="..\Prototype\Prototype.csproj" />
+    <ProjectReference Include="..\Singleton\Singleton.csproj" />
+  </ItemGroup>
+
 </Project>
